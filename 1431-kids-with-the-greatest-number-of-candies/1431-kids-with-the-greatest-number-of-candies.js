@@ -10,8 +10,8 @@ var kidsWithCandies = function(candies, extraCandies) {
         if(candy>largest) largest = candy;
     })
     
-    const output = candies.map((candy)=> candy+extraCandies >= largest);
+    return candies.map((candy)=> candy+extraCandies >= largest);
     
-    return output;
+    
     
 };

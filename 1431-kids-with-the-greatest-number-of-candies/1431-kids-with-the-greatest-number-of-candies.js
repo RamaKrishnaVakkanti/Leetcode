@@ -4,11 +4,11 @@
  * @return {boolean[]}
  */
 var kidsWithCandies = function(candies, extraCandies) {
-    let largest = Math.max(...candies);
+    let largest = candies[0];
     
-    // candies.map((candy)=>{
-    //     if(candy>largest) largest = candy;
-    // })
+    candies.map((candy)=>{
+        if(candy>largest) largest = candy;
+    })
     
     return candies.map((candy)=> candy+extraCandies >= largest);
     

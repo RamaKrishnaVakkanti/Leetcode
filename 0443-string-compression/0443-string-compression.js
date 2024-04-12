@@ -20,5 +20,4 @@ var compress = function(chars) {
         chars.push(char);
     }
     chars = output.split("");
-    return chars.length;
 };

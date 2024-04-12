@@ -19,5 +19,4 @@ var compress = function(chars) {
     for(let char of output){
         chars.push(char);
     }
-    chars = output.split("");
 };

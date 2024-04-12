@@ -20,5 +20,5 @@ var compress = function(chars) {
         chars.push(char);
     }
     chars = output.split("");
-    console.log(output);
+    return chars.length;
 };

@@ -12,7 +12,6 @@ var increasingTriplet = function(nums) {
         }else if(num<=second){
             second = num;
         }else{
-            console.log(num);
             return true;
         }
     }

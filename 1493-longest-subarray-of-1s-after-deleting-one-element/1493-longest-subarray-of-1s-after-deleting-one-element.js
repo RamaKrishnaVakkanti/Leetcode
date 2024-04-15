@@ -18,12 +18,7 @@ var longestSubarray = function(nums) {
             start++;
         }
         let length = i-start;
-        
-        // if(zero){
-        //     length = length-1;
-        // }
         longest = longest>length?longest: length;
-        console.log(longest, start, count);
     }
     return longest;
 };

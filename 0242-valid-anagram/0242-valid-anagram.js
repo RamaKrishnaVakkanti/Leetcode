@@ -3,7 +3,4 @@
  * @param {string} t
  * @return {boolean}
  */
-var isAnagram = function(s, t) {
-    return (s.split('').sort().join('') == t.split('').sort().join(''))
-    
-};
+var isAnagram = (s, t)=> s.split('').sort().join('') == t.split('').sort().join(''); 

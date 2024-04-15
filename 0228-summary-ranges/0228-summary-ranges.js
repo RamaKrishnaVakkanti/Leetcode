@@ -17,32 +17,4 @@ var summaryRanges = function(nums) {
     }
     
     return output;
-    
-   //  let start = '#';
-   //  let recent = '#';
-   //  let output = [];
-   //  for(let i=0;i<nums.length;i++){
-   //      if(start=='#'){
-   //          start=nums[i];
-   //          recent = nums[i];
-   //      }else if(nums[i] == recent+1){
-   //          recent = nums[i];
-   //      }else{
-   //          if(start == recent){
-   //              output.push(start+"");
-   //          }else{
-   //              output.push(""+start+"->"+recent+"");
-   //          }
-   //          start=nums[i];
-   //          recent = nums[i];
-   //      }
-   //  }
-   // if(nums.length !==0){
-   //      if(start == recent){
-   //              output.push(start+"");
-   //          }else{
-   //              output.push(""+start+"->"+recent+"");
-   //          }
-   // }
-   //  return output;
 };

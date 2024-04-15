@@ -4,21 +4,14 @@
  */
 var longestSubarray = function(nums) {
     
-    let longest =0;
-    let start = 0;
-    let count =0;
-    let zero=false;
+    let longest =0,start = 0,count =0;
     for(let i=0;i<nums.length;i++){
-        if(nums[i]== 0){
-            count++;
-            zero = true;
-        }
+        if(nums[i]== 0) count++;
         while(count>1){
             if(nums[start]==0) count--;
             start++;
         }
-        let length = i-start;
-        longest = longest>length?longest: length;
+        longest = longest>i-start?longest: i-start;
     }
     return longest;
 };

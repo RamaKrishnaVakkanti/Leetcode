@@ -13,9 +13,10 @@
 var maxLevelSum = function(root) {
     
     let BFS=[root];
-    let sum = -Infinity;
-    let level = -1;
-    let levelCount = 1;
+    // let sum = -Infinity;
+    // let level = -1;
+    // let levelCount = 1;
+    let levelSum =[];
     while(BFS.length){
         let localBFS =[];
         let length = BFS.length;
@@ -26,12 +27,13 @@ var maxLevelSum = function(root) {
             if(value.left) localBFS.push(value.left);
             if(value.right) localBFS.push(value.right);
         }
-        if(localSum>sum){
-            sum =localSum;
-            level = levelCount;
-        }
+        // if(localSum>sum){
+        //     sum =localSum;
+        //     level = levelCount;
+        // }
+        levelSum.push(localSum);
         BFS=localBFS;
-        levelCount++;
+        // levelCount++;
     }
-    return level;
+    return levelSum.indexOf(Math.max(...levelSum))+1;
 };

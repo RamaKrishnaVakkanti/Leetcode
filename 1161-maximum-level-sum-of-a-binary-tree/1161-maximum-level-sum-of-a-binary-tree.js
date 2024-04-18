@@ -32,7 +32,6 @@ var maxLevelSum = function(root) {
         }
         BFS=localBFS;
         levelCount++;
-        console.log(localSum);
     }
     return level;
 };

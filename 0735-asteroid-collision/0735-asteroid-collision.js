@@ -22,7 +22,7 @@ var asteroidCollision = function(asteroids) {
         let lastAst = asteroidsStack.at(-1);
         let currentAst = asteroids[i];
         
-        if((lastAst>0 && currentAst<0) ){
+        if((lastAst>0 && currentAst<0)){
             if(lastAst+currentAst === 0){
                 asteroidsStack.pop();
             }else if(Math.abs(lastAst)<Math.abs(currentAst)){

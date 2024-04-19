@@ -11,13 +11,15 @@ var removeStars = function(s) {
 //     return s;
     
     let output ='';
-    
+    let length =0;
     for(let letter of s){
         if(letter !== '*'){
             output=output+letter;
+            length+=1;
         } 
         else{
-            output=output.slice(0,output.length-1);
+            output=output.slice(0,length-1);
+            length-=1;
         }
     }
     return output;

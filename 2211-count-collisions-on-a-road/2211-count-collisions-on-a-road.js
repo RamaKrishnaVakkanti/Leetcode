@@ -14,7 +14,6 @@ var countCollisions = function(directions) {
             if(lastVehicle == 'R'){
                 output+=2;
                 vehicleStack.pop();
-                // vehicleStack.push('S');
                 directions[i]='S';
                 i--;
             }else if(lastVehicle =='S'){
@@ -23,13 +22,10 @@ var countCollisions = function(directions) {
         }else if(currentVehicle == 'S' && lastVehicle == 'R'){
             output+=1;
             vehicleStack.pop();
-            // vehicleStack.push('S');
             i--;
         }else{
             vehicleStack.push(currentVehicle);
-        }
-        
-        // console.log(output, directions, vehicleStack);
+        }        
     }
     return output;
 };

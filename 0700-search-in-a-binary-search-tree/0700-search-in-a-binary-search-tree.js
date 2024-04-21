@@ -14,7 +14,6 @@
 var searchBST = function(root, val) {
     
     let search = (node)=>{
-        console.log(node);
         if(node.val == val){
             return node;
         }

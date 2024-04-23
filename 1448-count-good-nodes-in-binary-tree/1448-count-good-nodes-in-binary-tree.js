@@ -11,20 +11,17 @@
  * @return {number}
  */
 var goodNodes = function(root) {
-    
+    if(!root) return 0;
     let output = 0;
     
     let DFS =(node, maxValue=-Infinity)=>{
-        if(node){
+       
             if(node.val>=maxValue) {
-                console.log(node);
                 output++;
                 maxValue = node.val;
             }
             if(node.left) DFS(node.left, maxValue);
             if(node.right) DFS(node.right, maxValue);
-            
-        }
     }
     DFS(root);
     return output;

@@ -18,8 +18,8 @@ var pathSum = function(root, targetSum) {
         if(node) {
             path.push(node.val);
             if(!node.left && !node.right && sum+node.val-targetSum == 0) output.push([...path]);
-            if(node.left) DFS(node.left,sum+node.val, [...path]);
-            if(node.right) DFS(node.right,sum+node.val, [...path]);
+            DFS(node.left,sum+node.val, [...path]);
+            DFS(node.right,sum+node.val, [...path]);
         }
     }
     DFS(root);

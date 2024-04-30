@@ -4,14 +4,14 @@
  */
 var canVisitAllRooms = function(rooms) {
     let stack = [0];
-    let visited={};
-    
+    let visitedRooms=new Set();
+   
     while(stack.length){
         let roomNum=stack.pop();
-        if(!visited[roomNum]){
+        if(!visitedRooms.has(roomNum)){
             stack.push(...rooms[roomNum]);
-            visited[roomNum]=1;
+            visitedRooms.add(roomNum);
         }
     }
-    return Object.keys(visited).length === rooms.length;
+    return visitedRooms.size === rooms.length;
 };

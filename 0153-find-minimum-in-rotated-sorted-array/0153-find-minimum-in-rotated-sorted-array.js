@@ -12,7 +12,6 @@ var findMin = function(nums) {
         }else{
             right=mid;
         }
-        console.log(left, right);
     }
     return nums[left];
     

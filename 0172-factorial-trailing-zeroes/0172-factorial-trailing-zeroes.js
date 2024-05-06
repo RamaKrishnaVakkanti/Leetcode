@@ -16,7 +16,6 @@ var trailingZeroes = function(n) {
         let temp = Math.floor(n/5);
         output = output+temp;
         n=temp;
-        console.log(n, output);
     }
     return output;
 };

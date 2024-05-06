@@ -8,11 +8,8 @@ var maxProfit = function(prices) {
     let profit=0;
     
     for(let i=1;i<prices.length;i++){
-        if(prices[i] < small){
-            small = prices[i];
-        }else{
-            profit = prices[i]-small>profit ? prices[i]-small: profit;
-        }
+        if(prices[i] < small) small = prices[i];
+        else profit = prices[i]-small>profit ? prices[i]-small: profit;
     }
     return profit;
 };

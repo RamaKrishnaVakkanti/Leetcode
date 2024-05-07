@@ -12,6 +12,5 @@ var maxProfit = function(prices) {
             start= prices[i];
         }
     }
-    profit = prices[length-1]>start? profit+prices[length-1]-start: profit;
-    return (profit)
+    return prices[length-1]>start? profit+prices[length-1]-start: profit;
 };

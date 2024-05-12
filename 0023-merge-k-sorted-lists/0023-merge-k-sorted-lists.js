@@ -10,14 +10,11 @@
  * @return {ListNode}
  */
 var mergeKLists = function(lists) {
-    // console.log(lists)
     const newList=[];
     for(let i=0;i<lists.length;i++){
         lists[i] && newList.push(lists[i]);
     }
-    lists=[...newList];
-    
-    let firstList = [...lists];
+    lists=[...newList]; 
     let output = new ListNode(0);
     let head= output;
     while(lists.length){
@@ -30,6 +27,5 @@ var mergeKLists = function(lists) {
     if(lists[shortest].next) lists[shortest]=lists[shortest].next;
     else lists.splice(shortest,1);
     }
-    console.log(lists,output);
     return output.next;
 };

@@ -11,13 +11,10 @@ var maximumHappinessSum = function(happiness, k) {
     let index= happiness.length-1;
     while(select){
         if(count<k && happiness[index]-count>0){
-            console.log(index);
             output= output+ happiness[index]-count;
             index--;
             count++;
-        }else{
-            select =false;
-        }
+        }else select =false;
     }
     return output;
 };

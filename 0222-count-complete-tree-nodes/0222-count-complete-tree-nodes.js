@@ -12,7 +12,6 @@
  */
 var countNodes = function(root) {
     let output=0;
-    
     let traverse = (root)=>{
         if(root == null) return;
         else{

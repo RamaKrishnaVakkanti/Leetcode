@@ -20,13 +20,13 @@ var combinationSum = function(candidates, target) {
     // return Object.keys(result).map((str)=>str.split("-"));
 
     const result = []
-    const permut = (index=0, local =[], localSum=0) => {
+    const permut = (index, local, localSum) => {
         if(localSum>target) return;
         if(localSum == target) return result.push(local);
         for(let i=index;i<candidates.length;i++){
             permut(i,[...local,candidates[i]],localSum+candidates[i]);
         }
     }
-    permut();
+    permut(0,[],0);
     return result;
 };

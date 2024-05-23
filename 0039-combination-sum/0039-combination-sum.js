@@ -26,7 +26,6 @@ var combinationSum = function(candidates, target) {
   
 
     const permut = (index=0, local =[], localSum=0) => {
-        console.log(index, local, localSum)
         if(localSum>target) return;
         if(localSum == target) return result.push(local);
 

@@ -11,7 +11,6 @@
  * @return {number[]}
  */
 var preorder = function(root) {   
-    console.log(root);
     let output = [];
     if(!root) return [];
     let traverse = (root)=>{

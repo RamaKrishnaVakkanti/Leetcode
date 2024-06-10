@@ -12,23 +12,11 @@
  * @return {TreeNode}
  */
 var removeLeafNodes = function(root, target) {
-    if (root.left) {
-        root.left = removeLeafNodes(root.left, target);
-    }
-    if (root.right) {
-        root.right = removeLeafNodes(root.right, target);
-    }
-    if (root.left === null && root.right === null && root.val === target) {
-        return null;
-    }
-    return root;
-}
-// var removeLeafNodes = function(root, target) {
-//     if(root.left) root.left = removeLeafNodes(root.left, target);
-//     if(root.right) root.right = removeLeafNodes(root.right, target);
-//     if(root.val == target) return null;
+    if(root.left) root.left = removeLeafNodes(root.left, target);
+    if(root.right) root.right = removeLeafNodes(root.right, target);
+    if(root.left == null && root.right == null &&root.val == target) return null;
     
-//     return root;
+    return root;
     
 //     if(!root) return root;
 //     let traverse=(arr)=>{
@@ -51,4 +39,4 @@ var removeLeafNodes = function(root, target) {
 //     if(root.val == target && !root.left && !root.right) root = null;
 //     return (root);
     
-// };
+};

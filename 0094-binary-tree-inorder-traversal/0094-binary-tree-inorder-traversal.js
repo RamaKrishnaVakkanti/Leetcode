@@ -11,8 +11,7 @@
  * @return {number[]}
  */
 var inorderTraversal = function(root) {
-    let output = [];
-    
+    let output = [];    
     const inorder = (root)=>{
         if(!root) return;
         inorder(root.left);

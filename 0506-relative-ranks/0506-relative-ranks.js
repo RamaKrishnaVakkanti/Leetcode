@@ -14,6 +14,9 @@ var findRelativeRanks = function(score) {
     
     let output = new Array(score.length).fill(0);
     
-    for(let i=0;i<score.length;i++) output[i] = temp.indexOf(score[i])>2?(temp.indexOf(score[i])+1)+"" : map[temp.indexOf(score[i])+1];
+    for(let i=0;i<score.length;i++) {
+        let index = temp.indexOf(score[i]);
+        output[i] = index>2?(index+1)+"" : map[index+1];
+    }
     return output;
 };

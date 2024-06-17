@@ -11,15 +11,51 @@
  * @return {number}
  */
 var countNodes = function(root) {
-    let output=0;
+    
+    let count =0;
+    
     let traverse = (root)=>{
-        if(root == null) return;
-        else{
-            output++;
-            traverse(root.left);
-            traverse(root.right);
-        }
+        if(!root) return;
+        count++;
+        traverse(root.left);
+        traverse(root.right);
     }
+    
     traverse(root);
-    return output;
+    return count;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // let output=0;
+    // let traverse = (root)=>{
+    //     if(root == null) return;
+    //     else{
+    //         output++;
+    //         traverse(root.left);
+    //         traverse(root.right);
+    //     }
+    // }
+    // traverse(root);
+    // return output;
 };

@@ -23,28 +23,8 @@ var countNodes = function(root) {
     
     traverse(root);
     return count;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
     
     
     // let output=0;

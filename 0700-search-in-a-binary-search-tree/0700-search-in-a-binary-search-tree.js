@@ -12,20 +12,45 @@
  * @return {TreeNode}
  */
 var searchBST = function(root, val) {
-    
-    let search = (node)=>{
-        if(node.val == val){
-            return node;
-        }
-        if(node.val>val) {
-            if(node.left) return search(node.left);
-            else return null;
-        }
-        else if(node.val<val){
-            if(node.right) return search(node.right);
-            else return null;
-        }
+    if(root==null) return null;
+    if(val==root.val){
+        return root;
     }
-     return search(root);
+    if(val<root.val) return searchBST(root.left,val);
+    if(val>root.val) return searchBST(root.right, val);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//     let search = (node)=>{
+//         if(node.val == val){
+//             return node;
+//         }
+//         if(node.val>val) {
+//             if(node.left) return search(node.left);
+//             else return null;
+//         }
+//         else if(node.val<val){
+//             if(node.right) return search(node.right);
+//             else return null;
+//         }
+//     }
+//      return search(root);
     
 };

@@ -21,32 +21,7 @@ var invertTree = function(root) {
     traverse(root);
     return root;
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     // const arr = [root];
     // while(arr.length){
     //     let temp = arr.pop();

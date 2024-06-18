@@ -1,7 +1,6 @@
 
 var hasPathSum = function(root, targetSum) {
     if(!root) return false;
-    console.log(root, targetSum);
     targetSum = targetSum-root.val;
     if(!root.left && !root.right && targetSum == 0) return true;
     

@@ -27,6 +27,5 @@ var findSecondMinimumValue = function(root) {
         traverse(root.right);
     }
     traverse(root);
-    console.log(lowest, secondLowest);
     return secondLowest[1] ? secondLowest[0] : -1;
 };

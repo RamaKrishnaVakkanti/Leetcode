@@ -15,30 +15,10 @@ var isSameTree = function(p, q) {
    
     
     if(p==null && q== null) return true;
-    if(!q || !p || p.val !==q.val ) return false;
+    if(!q || !p) return false;
     
     return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
     // if(p == null && q ==  null) return true;
